@@ -36,6 +36,6 @@ document.getElementById('label').innerHTML = 'Label: ' + results[0].label;
 
 document.getElementById('confidence').innerHTML = 'Confidence: ' + Math.round(results[0].confidence * 100) + '%';
 
-utterThis = new speechSynthesisUtterence(results[0].label);
-synth.speek(utterThis);
+utterThis = new SpeechSynthesisUtterance(results[0].label);
+synth.speak(utterThis);
 }
